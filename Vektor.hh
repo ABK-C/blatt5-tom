@@ -2,6 +2,7 @@
 #define VEKTOR_HH
 
 #include <iostream>
+#include <cmath>
 
 /*
   Klasse fuer einen Punkt oder Vektor in drei Dimensionen
@@ -12,6 +13,7 @@ class Vektor {
 
   double betrag();
 
+
   double x() { return x_; }
   double y() { return y_; }
   double z() { return z_; }
@@ -21,7 +23,8 @@ class Vektor {
 
   double mal(Vektor v);
   Vektor kreuz(Vektor v);
-
+  
+  
   bool operator==(Vektor v) {
     return ((x_ == v.x_) && (y_ == v.y_) && (z_ == v.z_));
   }
